@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearRegression", "LinearRegression\LinearRegression.csproj", "{6E108F86-9ED1-4628-B641-C03A273C048D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleLinearRegression", "MultipleLinearRegression\MultipleLinearRegression.csproj", "{3A32018C-E5D2-4669-8396-031C41D4DE57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E108F86-9ED1-4628-B641-C03A273C048D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E108F86-9ED1-4628-B641-C03A273C048D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E108F86-9ED1-4628-B641-C03A273C048D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E108F86-9ED1-4628-B641-C03A273C048D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A32018C-E5D2-4669-8396-031C41D4DE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A32018C-E5D2-4669-8396-031C41D4DE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A32018C-E5D2-4669-8396-031C41D4DE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A32018C-E5D2-4669-8396-031C41D4DE57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {166B1176-45E7-4CD8-B6A2-B7A001DAF348}
+	EndGlobalSection
+EndGlobal
