@@ -61,5 +61,6 @@ namespace MultipleLinearRegression
             Console.WriteLine($"*       RMS loss:      {metrics.RootMeanSquaredError:#.##}");
             Console.WriteLine($"*************************************************");
         }
+
     }
 }
