@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            this.cartesianChart = new LiveCharts.WinForms.CartesianChart();
             this.SuspendLayout();
             // 
-            // cartesianChart1
+            // cartesianChart
             // 
-            this.cartesianChart1.Location = new System.Drawing.Point(12, 12);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(776, 426);
-            this.cartesianChart1.TabIndex = 0;
-            this.cartesianChart1.Text = "cartesianChart1";
+            this.cartesianChart.Location = new System.Drawing.Point(12, 12);
+            this.cartesianChart.Name = "cartesianChart";
+            this.cartesianChart.Size = new System.Drawing.Size(776, 426);
+            this.cartesianChart.TabIndex = 0;
+            this.cartesianChart.Text = "cartesianChart";
             // 
-            // ChartForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cartesianChart1);
-            this.Name = "ChartForm";
-            this.Text = "ChartForm";
+            this.Controls.Add(this.cartesianChart);
+            this.Name = "Prediction model";
+            this.Text = "Prediction model";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        private LiveCharts.WinForms.CartesianChart cartesianChart;
     }
 }
 
