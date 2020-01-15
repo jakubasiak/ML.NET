@@ -26,13 +26,33 @@ namespace PolynomialRegression
 
             IDataView dataView = mlContext.Data.LoadFromTextFile<EmployeeSalary>(dataPath, hasHeader: true, separatorChar: ',');
 
+            Action<EmployeeSalary, EmployeeSalary> squared = (input, output) =>
+            {
+                output.PositionLevel = (float) Math.Pow(input.PositionLevel, 2.0);
+            };
+            Action<EmployeeSalary, EmployeeSalary> fourth = (input, output) =>
+            {
+                output.PositionLevel = (float)Math.Pow(input.PositionLevel, 4.0);
+            };
+
+            var dpp1 = mlContext.Transforms.CopyColumns("Squared", nameof(EmployeeSalary.PositionLevel))
+                .Append(mlContext.Transforms.CustomMapping(squared, null));
+
+            var dpp2 = mlContext.Transforms.CopyColumns("Third", nameof(EmployeeSalary.PositionLevel))
+                .Append(mlContext.Transforms.CustomMapping(fourth, null));
+
             var dataProcessingPipeline = mlContext.Transforms.CopyColumns("Label", nameof(EmployeeSalary.Salary))
-                .Append(mlContext.Transforms.Concatenate("Features", nameof(EmployeeSalary.PositionLevel)));
+                //.Append(dpp1)
+                .Append(dpp2)
+                .Append(mlContext.Transforms.Concatenate("Features", nameof(EmployeeSalary.PositionLevel), "Third"));
 
             var trainer = mlContext.Regression.Trainers.LbfgsPoissonRegression(labelColumnName: "Label", featureColumnName: "Features");
             var trainingPipeline = dataProcessingPipeline.Append(trainer);
 
             var trainedModel = trainingPipeline.Fit(dataView);
+
+            // Use only during debugging
+            var previewTrainSet = DebuggerExtensions.Preview(trainedModel.Transform(dataView), 100);
 
             var predEngine = mlContext.Model.CreatePredictionEngine<EmployeeSalary, EmployeeSalaryPrediction>(trainedModel);
 
