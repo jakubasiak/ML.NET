@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media;
 using LiveCharts;
 using LiveCharts.Wpf;
-using Brushes = System.Drawing.Brushes;
 
-namespace PolynomialRegression
+namespace DecisionTreeRegression
 {
     public partial class ChartForm : Form
     {
@@ -23,6 +22,5 @@ namespace PolynomialRegression
             this.cartesianChart.AxisY.Add(yAxis);
             cartesianChart.LegendLocation = LegendLocation.Right;
         }
-
     }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleLinearRegression", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolynomialRegression", "PolynomialRegression\PolynomialRegression.csproj", "{F1F7D226-EC71-4C3F-BF8D-049E577B2189}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionTreeRegression", "DecisionTreeRegression\DecisionTreeRegression.csproj", "{AC2133E9-906D-483C-82EB-1799FB7AFA49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F1F7D226-EC71-4C3F-BF8D-049E577B2189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F7D226-EC71-4C3F-BF8D-049E577B2189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1F7D226-EC71-4C3F-BF8D-049E577B2189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2133E9-906D-483C-82EB-1799FB7AFA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2133E9-906D-483C-82EB-1799FB7AFA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2133E9-906D-483C-82EB-1799FB7AFA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2133E9-906D-483C-82EB-1799FB7AFA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
